@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+   text-decoration: none; 
+   color: white;
+}
+
+li,
+ul{
+   list-style: none; 
+}
+
+.info{
+    padding-left: 30px;
+}
+
+.caption{
+    background-color: black;
+    padding: 10px;
+    border: 20px;
+    border-radius: 20px;
+}
+
+
+/*////////////////////////////////////*/
+.header-inf{
+    background-color: black;
+    padding: 15px;
+    color: white;
+}
+
+.header-titt{
+    display: flex;
+    justify-content: center;
+}
+
+.item-inf{
+    display: flex;
+    justify-content: center;
+}
+
+.portada-inf{
+    height: 93vh;
+    background-image: url(../img/wallpaperflare.com_wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table{
+    background-color: black;
+    border: 20px;
+    border-radius: 20px;
+    color: white;
+    width: 50vw;
+    padding: 20px;
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+}
+
+.footer-tittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+
+.footer-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* /////////////////////////////////////// */
+@media (min-width: 768px){
+
+.header-inf{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-inf{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-tittle
+{
+   padding: 20px;
+}
+
+}
+
+@media (min-width: 1200px){
+
+    .header-inf{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-tittle{
+        display: flex;
+    }   
+}

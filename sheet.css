@@ -1,0 +1,198 @@
+/* Reseteo de css */
+* {
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    color: white;
+}
+
+
+/*---------------COMPONENTES CELULAR---------------------*/
+.header {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-item {
+    display: none;
+}
+
+.header-form {
+    display: none;
+}
+
+
+.rayas {
+    font-size: 25px;
+}
+
+.portada-index {
+    height: 93vh;
+    background-image: url(./img/wallpaperbetter.jpg);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada-texto {
+    color: white;
+    background-color: black;
+
+    padding: 15px;
+
+    width: 60vw;
+    height: 25vh;
+
+    border: solid black;
+    border-radius: 25px;
+
+    overflow: scroll;
+}
+
+.emiliano {
+    display: flex;
+    justify-content: center;
+}
+
+.introd {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+}
+
+.footer-tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------------COMPONENTES IPAD---------------------*/
+@media (min-width: 768px) {
+    .header {
+        background-color: black;
+        color: white;
+        padding: 15px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        /* Tambien podemos usar baseline */
+
+    }
+
+    .header-list {
+        display: flex;
+        gap: 20px;
+    }
+
+    .header-form {
+        display: none;
+    }
+
+    .list-item {
+        display: block;
+    }
+
+    .header-tittle {
+        font-family: cute;
+    }
+
+    .rayas {
+        display: none;
+    }
+
+    /*--------------------MAIN------------------------*/
+    /*--------------------PORTADA----------------------*/
+
+
+    .portada-texto {
+        width: 55vw;
+        height: 18vh;
+
+        border: solid black;
+        border-radius: 25px;
+
+        padding: 20px;
+
+        flex-wrap: wrap;
+
+        background-color: black;
+        color: white;
+
+        overflow: scroll;
+    }
+
+    .emiliano {
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .introd {
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .parr-main {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+}
+
+/* ///////////////////////////////////////////////7 */
+@media (min-width: 1200px) {
+
+    .header-form {
+        display: block;
+
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-tittle{
+        display: flex;
+    }
+    
+
+}
